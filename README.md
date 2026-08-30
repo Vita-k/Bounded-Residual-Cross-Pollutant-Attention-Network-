@@ -159,11 +159,7 @@ Do **not** commit:
 - `.env` files;
 - passwords or API credentials.
 
-## Citation
 
-Kashtan, V., Hnatushenko, V.: **BR-CPA-RNet: Bounded Residual Cross-Pollutant Attention Network for Short-Term Air Pollutant Forecasting.** GitHub repository (2026).
-
-A DOI-based citation can be added after archiving a tagged GitHub release in Zenodo.
 
 ## License
 

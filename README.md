@@ -1,8 +1,5 @@
 # BR-CPA-RNet: Bounded Residual Cross-Pollutant Attention Network
 
-Code, configuration, quality-control script, aligned satellite data and stored results for the paper
-
-> V. Kashtan, V. Hnatushenko. *Intelligent Environmental Information System for Short-Term Air-Pollutant Forecasting.* SCIA-2026: 5th International Workshop on Social Communication and Information Activity in Digital Humanities, Lviv, Ukraine, 2026 (CEUR Workshop Proceedings, submitted).
 
 The repository corresponds to the manuscript version submitted to SCIA-2026. All numbers below are taken from Tables 2–4 of the paper and are reproduced by the files in `results_clean/`.
 

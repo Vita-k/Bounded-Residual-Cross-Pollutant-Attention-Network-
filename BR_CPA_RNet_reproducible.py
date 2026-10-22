@@ -20,7 +20,7 @@ Primary manuscript setting:
     paired moving-block bootstrap
 
 Required user data:
-    2019-10-efir_1-3.xlsx
+    2019-10-efir_1-3_clean.xlsx  (produced by clean_efir.py from the open-data file 2019-10-efir_1-3.xlsx)
     results_s5p_exact/s5p_aligned_30min.csv
 
 This file does not contain credentials or raw monitoring data.
@@ -564,7 +564,7 @@ def main():
     ap.add_argument(
         "--ground-xlsx",
         type=Path,
-        default=Path("2019-10-efir_1-3.xlsx"),
+        default=Path("data/2019-10-efir_1-3_clean.xlsx"),
     )
     ap.add_argument(
         "--sat-csv",
@@ -574,7 +574,7 @@ def main():
     ap.add_argument(
         "--out-dir",
         type=Path,
-        default=DEFAULT_OUT,
+        default=Path("results_clean"),
     )
     ap.add_argument("--folds", type=int, default=3)
     ap.add_argument("--seeds", type=int, default=5)
@@ -589,6 +589,7 @@ def main():
     ap.add_argument("--quick", action="store_true")
 
     args = ap.parse_args()
+    print(f"Ground file: {args.ground_xlsx}  ->  output: {args.out_dir}")
 
     if args.quick:
         args.folds = 1

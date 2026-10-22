@@ -10,10 +10,6 @@ The repository corresponds to the manuscript version submitted to SCIA-2026. All
 | Path | Content |
 |---|---|
 | `clean_efir.py` | Quality control of the one-minute ground record (rules R1–R4, Section 3.1 of the paper) |
-| `data/2019-10-efir_1-3_clean.xlsx` | Ground and meteorological record after quality control (output of `clean_efir.py`) |
-| `results_s5p_exact/s5p_aligned_30min.csv` | Sentinel-5P CO, NO₂, SO₂ context aligned causally to the 30-min grid (acquisition time ≤ forecast origin) |
-| `results_s5p_exact/s5p_overpasses_with_time.csv` | Overpasses with acquisition times used for the alignment |
-| `results_s5p_exact/s5p_alignment_qc.csv` | Availability fraction and median age of each Sentinel-5P product |
 | `BR_CPA_RNet_reproducible.py` | Single-file experiment: preprocessing, rolling-origin folds, reference models, BR-CPA-RNet, ablations, paired block bootstrap |
 | `eco_monitor_v7.py` | Prototype dashboard (Fig. 4 of the paper) generated from the stored predictions |
 | `results_clean/` | Stored outputs of the run reported in the paper |
